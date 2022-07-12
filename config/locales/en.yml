@@ -43,7 +43,14 @@ en:
       contact: Contact Page
       text: Contact the Ruby on Rails Tutorial about the sample app at the
       contact_page: Tutorial Page
-  user:
+  users:
+    index:
+      title: List Users
+    show:
+      show_user_failed: User not found
+    update:
+      update_success: Update successfully
+      update_fail: Update failed
     new:
       sign_up: Sign Up
       name: Name
@@ -52,9 +59,16 @@ en:
       password_confirmation: Password Confirmation
       submit: Create my account
     create:
-      alert_not_save: "Registration failed"
+      alert_not_save: Registration failed
     show:
-      show_user_failed: "User not found!"
+      show_user_failed: User not found!
+    user:
+      delete: Delete
+      log_in_first: Please Login.
+      delete_success: Delete Success
+      delete_fail: Delete Fail
+    correct_user:
+      alert_correct_user: User not correct
   shared:
     error: Errors !!!
     text_alert: Have some errors
@@ -63,16 +77,6 @@ en:
       log_in: Log In
       new_user: New Users?
       sign_up_now: Sign Up Now
-    create:
-      invalid_email_password_combination: Email or password is invalid
-  shared:
-    error: Errors !!!
-    text_alert: Have some errors
-  sessions:
-    new:
-      log_in: Log In
-      new_user: New Users?
-      sign_up_now: Sign Up Now
-      remember_me: Remember Me
+      remember_me: Remember me
     create:
       invalid_email_password_combination: Email or password is invalid
