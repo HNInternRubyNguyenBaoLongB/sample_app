@@ -75,6 +75,16 @@ en:
       check_mail: Please check email to active your account
     correct_user:
       alert_correct_user: User not correct
+    show_follow:
+      show: Microposts
+    unfollow:
+      unfollow-btn: Unfollow
+    follow:
+      follow-btn: Follow
+    following:
+      title: Following
+    followers:
+      title: Follower
   shared:
     error: Errors !!!
     text_alert: Have some errors
@@ -85,6 +95,9 @@ en:
     user_info:
       profile: View my profile
       micropost: Micropost
+    stats:
+      following: Following
+      followers: Followers
   sessions:
     new:
       log_in: Log In
@@ -143,6 +156,8 @@ en:
       sub: ago
       delete: delete
       confirm: You sure?
+  relationships:
+    load_user_failed: "User not found!"
   models:
     micropost:
       valid_img: Must be a valid image format

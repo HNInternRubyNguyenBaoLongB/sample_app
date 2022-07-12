@@ -74,6 +74,16 @@ vi:
       check_mail: Kiểm tra email của bạn để kích hoạt tài khoản
     correct_user:
       alert_correct_user: User khong dung
+    show_follow:
+      show: Bài viết
+    unfollow:
+      unfollow-btn: Bỏ theo dõi
+    follow:
+      follow-btn: Theo dõi
+    following:
+      title: Đang theo dõi
+    followers:
+      title: Người theo dõi
   shared:
     error: Lỗi !!!
     text_alert: Xảy ra lỗi
@@ -84,6 +94,9 @@ vi:
     user_info:
       profile: Xem thông tin cá nhân
       micropost: Bài viết
+    stats:
+      following: Đang theo dõi
+      followers: Người theo dõi
   sessions:
     new:
       log_in: Đăng nhập
@@ -143,6 +156,8 @@ vi:
       sub: trước
       delete: Xóa
       confirm: Bạn có chắc?
+    relationships:
+      load_user_failed: "Không tìm thấy tài khoản"
   models:
     micropost:
       valid_img: Định dạng file không hợp lệ

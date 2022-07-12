@@ -1,8 +1,8 @@
 class UsersController < ApplicationController
   include SessionsHelper
   before_action :logged_in_user, except: %i(new create)
-  before_action :load_user, only: %i(show destroy update edit)
-  before_action :correct_user, only: %i(show edit update)
+  before_action :load_user, except: %i(index create new)
+  before_action :correct_user, only: %i(edit update)
 
   def index
     @pagy, @users = pagy User.order_by("id", "ASC"),
@@ -49,6 +49,20 @@ class UsersController < ApplicationController
       flash[:danger] = t ".user.delete_fail"
     end
     redirect_to users_path
+  end
+
+  def following
+    @title = t ".title"
+    @pagy, @users = pagy @user.following,
+                         items: Settings.user.per_page
+    render :show_follow
+  end
+
+  def followers
+    @title = t ".title"
+    @pagy, @users = pagy @user.followers,
+                         items: Settings.user.per_page
+    render :show_follow
   end
 
   private
