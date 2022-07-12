@@ -33,6 +33,7 @@ vi:
       ruby_tut: Hướng dẫn Ruby On Rails
       sample_app: Ứng dụng mẫu
       sign_up: Đăng ký ngay
+      microposts: Bài viết
     help:
       title: Trợ giúp
       describe_html: Đây là trang web dành cho
@@ -50,6 +51,7 @@ vi:
       title: Danh sách người dùng
     show:
       show_user_failed: Không tìm thấy tài khoản
+      microposts: Bài viết
     update:
       update_success: Cập nhật thành công
       update_fail: Cập nhật that bai
@@ -75,6 +77,13 @@ vi:
   shared:
     error: Lỗi !!!
     text_alert: Xảy ra lỗi
+    micropost_form:
+      content_placeholder: Bài viết mới...
+      post_btn: Đăng
+      oversize_img: File nặng hơn 5MB. Vui lòng chọn file có dung lượng nhỏ hơn.
+    user_info:
+      profile: Xem thông tin cá nhân
+      micropost: Bài viết
   sessions:
     new:
       log_in: Đăng nhập
@@ -120,3 +129,21 @@ vi:
       token_time_out: Token hết hiệu lực
     new:
       forgot_password: Quên mật khẩu
+  microposts:
+    create:
+      create_success: Tạo bài viết thành công
+      create_failed: Tạo bài viết thất bại
+    destroy:
+      delete_success: Xóa bài viết thành công
+      delete_fail: Xóa bài viết thất bại
+    correct_user:
+      invalid: Bài viết không hợp lệ
+    micropost:
+      title: Được đăng
+      sub: trước
+      delete: Xóa
+      confirm: Bạn có chắc?
+  models:
+    micropost:
+      valid_img: Định dạng file không hợp lệ
+      less_than: Dung lượng file phải bé hơn 5MB

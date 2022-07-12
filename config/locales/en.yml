@@ -34,6 +34,7 @@ en:
       ruby_tut: Ruby On Rails Tutorial
       sample_app: Sample App
       sign_up: Sign up now
+      microposts: Micropost Feed
     help:
       title: Help page
       describe_html: This is the Website for
@@ -51,6 +52,7 @@ en:
       title: List Users
     show:
       show_user_failed: User not found
+      microposts: Micropost
     update:
       update_success: Update successfully
       update_fail: Update failed
@@ -76,6 +78,13 @@ en:
   shared:
     error: Errors !!!
     text_alert: Have some errors
+    micropost_form:
+      content_placeholder: Compose new micropost...
+      post_btn: Post
+      oversize_img: Maximum file size is 5MB. Please choose a smaller file.
+    user_info:
+      profile: View my profile
+      micropost: Micropost
   sessions:
     new:
       log_in: Log In
@@ -120,3 +129,21 @@ en:
       token_time_out: Token time out
     new:
       forgot_password: Forget password
+  microposts:
+    create:
+      create_success: Create success
+      create_failed: Create fail
+    destroy:
+      delete_success: Delete successfully
+      delete_fail: Delete fail
+    correct_user:
+      invalid: Micropost invalid
+    micropost:
+      title: Posted
+      sub: ago
+      delete: delete
+      confirm: You sure?
+  models:
+    micropost:
+      valid_img: Must be a valid image format
+      less_than: should be less than 5MB

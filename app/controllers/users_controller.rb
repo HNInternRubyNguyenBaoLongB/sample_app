@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+  include SessionsHelper
   before_action :logged_in_user, except: %i(new create)
   before_action :load_user, only: %i(show destroy update edit)
   before_action :correct_user, only: %i(show edit update)
@@ -12,7 +13,10 @@ class UsersController < ApplicationController
     @user = User.new
   end
 
-  def show; end
+  def show
+    @pagy, @microposts = pagy @user.microposts.recent_posts,
+                              items: Settings.user.per_page
+  end
 
   def edit; end
 

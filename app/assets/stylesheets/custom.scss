@@ -38,6 +38,11 @@ textarea {
 }
 
 aside {
+  textarea {
+    height: 100px;
+    margin-bottom: 5px;
+  }
+
   section.user_info {
     margin-top: 20px;
   }
@@ -152,5 +157,44 @@ footer {
     overflow: auto;
     padding: 10px 0;
     border-bottom: 1px solid $gray-lighter;
+  }
+}
+
+.microposts {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+
+  li {
+    padding: 10px 0;
+    border-top: 1px solid $white_color-gray;
+  }
+
+  .user {
+    margin-top: 5em;
+    padding-top: 0;
+  }
+
+  .gravatar {
+    float: left;
+    margin-right: 10px;
+    margin-top: 5px;
+  }
+
+  .content {
+    display: block;
+    margin-left: 60px;
+
+    img {
+      display: block;
+      padding: 5px 0;
+    }
+  }
+
+  .timestamp {
+    color: $gray-lighter;
+    display: block;
+    margin-left: 60px;
   }
 }
