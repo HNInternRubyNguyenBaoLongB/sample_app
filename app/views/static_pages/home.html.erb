@@ -1,6 +1,6 @@
 <div class="center jumbotron">
-  <h1 class = "text-center"> <%= t ".welcome" %> </h1>
-  <h2 class = "text-center"> <%= t ".page_for" %>
-    <%= link_to t ".ruby_tut", Settings.home.tutorial_rails %> <%= t ".sample_app" %></h2>
-    <%= link_to t ".sign_up", '#', class: "btn btn-lg btn-primary" %>
+  <h1 class = "text-center"> <%= t(".welcome") %> </h1>
+  <h2 class = "text-center"> <%= t(".page_for") %>
+    <%= link_to t(".ruby_tut"), Settings.home.tutorial_rails %> <%= t ".sample_app" %></h2>
+    <%= link_to t(".sign_up"), signup_path , class: "btn btn-lg btn-primary" %>
 </div>
