@@ -1,7 +1,5 @@
 class User < ApplicationRecord
-  before_save :downcase_email
-  attr_accessor :remember_token
-
+  attr_accessor :remember_token, :activation_token
   UPDATABLE_ATTRS = %i(name email password password_confirmation).freeze
   scope :order_by, ->(field, sort_by){order("#{field} #{sort_by}")}
 
@@ -19,6 +17,9 @@ class User < ApplicationRecord
     {minimum: Settings.user.password.min_length}, if: :password
 
   has_secure_password
+
+  before_save :downcase_email
+  before_create :create_activation_digest
 
   class << self
     def digest string
@@ -44,14 +45,28 @@ class User < ApplicationRecord
     update_attribute :remember_digest, nil
   end
 
-  def authenticated? remember_token
-    return false unless remember_token
+  def authenticated? attribute, token
+    digest = send "#{attribute}_digest"
+    return false unless digest
 
-    BCrypt::Password.new(remember_digest).is_password? remember_token
+    BCrypt::Password.new(digest).is_password? token
+  end
+
+  def send_mail_activate
+    UserMailer.account_activation(self).deliver_now
+  end
+
+  def activate
+    update_columns activated: true, activated_at: Time.zone.now
   end
 
   private
   def downcase_email
     email.downcase!
+  end
+
+  def create_activation_digest
+    self.activation_token = User.new_token
+    self.activation_digest = User.digest activation_token
   end
 end

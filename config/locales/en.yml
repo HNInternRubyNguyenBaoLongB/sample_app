@@ -43,6 +43,9 @@ en:
       contact: Contact Page
       text: Contact the Ruby on Rails Tutorial about the sample app at the
       contact_page: Tutorial Page
+    mailer:
+      message_active: Active your account to use our service
+      active: Active
   users:
     index:
       title: List Users
@@ -67,6 +70,7 @@ en:
       log_in_first: Please Login.
       delete_success: Delete Success
       delete_fail: Delete Fail
+      check_mail: Please check email to active your account
     correct_user:
       alert_correct_user: User not correct
   shared:
@@ -80,3 +84,13 @@ en:
       remember_me: Remember me
     create:
       invalid_email_password_combination: Email or password is invalid
+      user_in_active: User not active
+      invalid_email_password_combination: Email or password is invalid
+  user_mailer:
+    account_activation:
+      greeting: Hi
+      subject: Account Activation
+      active: Activate
+      content: Welcome to the Sample App! Click on the link below to activate your account
+  account_activations:
+    account_activated: Account activated

@@ -42,6 +42,10 @@ vi:
       contact: Trang liên hệ
       text: "Tìm hiểu thêm hướng dẫn Ruby On Rails cho Ứng dụng mẫu tại:"
       title: Trang hướng dẫn
+    mailer:
+      message_active: Active your account to use our service
+      active: Active
+
   users:
     index:
       title: Danh sách người dùng
@@ -66,6 +70,7 @@ vi:
       log_in_first: Xin mời đăng nhập.
       delete_success: Xóa thành công
       delete_fail: Xóa thất bại
+      check_mail: Kiểm tra email của bạn để kích hoạt tài khoản
     correct_user:
       alert_correct_user: User khong dung
   shared:
@@ -79,4 +84,14 @@ vi:
       password: Mật khẩu
       remember_me: Ghi nhớ đăng nhập
     create:
+      user_in_active: Tài khoản chưa được kích hoạt
       invalid_email_password_combination: Tên đăng nhập họăc mật khẩu không đúng
+  user_mailer:
+    account_activation:
+      greeting: Xin chao
+      subject: Xac nhan tai khoan
+      active: Kich hoat
+      content: Chào mừng bạn đến với sample app. Click vào link bên dưới để kích hoạt tài khoản
+  account_activations:
+    account_activated: Tài khoản được kích hoạt
+    activated_failed: Kích hoạt tài khoản thất bại
