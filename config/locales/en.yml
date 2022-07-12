@@ -82,6 +82,7 @@ en:
       new_user: New Users?
       sign_up_now: Sign Up Now
       remember_me: Remember me
+      forget_password: Forget password
     create:
       invalid_email_password_combination: Email or password is invalid
       user_in_active: User not active
@@ -92,5 +93,30 @@ en:
       subject: Account Activation
       active: Activate
       content: Welcome to the Sample App! Click on the link below to activate your account
+    password_reset:
+      forget_password: Forget password
+      password_reset: Password reset
+      to_reset_password: To reset your password click the link below
+      expire_link: This link will expire in two hours.
+      if_you_not_request: If you did not request your password to be reset, please ignore this email and your password will stay
   account_activations:
     account_activated: Account activated
+  password_resets:
+    create:
+      email_sent: Email sent with password reset instructions
+      email_not_found: Not found email
+    edit:
+      title: Update password
+      update_password: Update Password
+      password: Password
+      confirmation: Confirmation
+    update:
+      password_reset_success: Password reset successfully
+    load_user:
+      email_not_found: Email not found
+    valid_user:
+      bad_request: Bad request
+    check_expiration:
+      token_time_out: Token time out
+    new:
+      forgot_password: Forget password

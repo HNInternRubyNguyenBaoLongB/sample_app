@@ -3,7 +3,6 @@ class SessionsController < ApplicationController
 
   def create
     user = User.find_by email: params[:session][:email].downcase
-
     if user&.authenticate params[:session][:password]
       if user.activated?
         log_in_with_active user
@@ -20,5 +19,16 @@ class SessionsController < ApplicationController
   def destroy
     log_out if logged_in?
     redirect_to root_path
+  end
+
+  def remember_user user
+    params[:session][:remember_me] == "1" ? remember(user) : forget(user)
+  end
+
+  private
+  def log_in_with_active user
+    log_in user
+    remember_user user
+    redirect_back_or user
   end
 end

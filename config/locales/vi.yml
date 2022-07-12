@@ -45,7 +45,6 @@ vi:
     mailer:
       message_active: Active your account to use our service
       active: Active
-
   users:
     index:
       title: Danh sách người dùng
@@ -83,6 +82,7 @@ vi:
       sign_up_now: Đăng ký ngay
       password: Mật khẩu
       remember_me: Ghi nhớ đăng nhập
+      forget_password: Quên mật khẩu
     create:
       user_in_active: Tài khoản chưa được kích hoạt
       invalid_email_password_combination: Tên đăng nhập họăc mật khẩu không đúng
@@ -92,6 +92,31 @@ vi:
       subject: Xac nhan tai khoan
       active: Kich hoat
       content: Chào mừng bạn đến với sample app. Click vào link bên dưới để kích hoạt tài khoản
+    password_reset:
+      forget_password: Quên mật khẩu
+      password_reset: Khôi phục mật khẩu
+      to_reset_password: Để khôi phục mật khẩu nhấn vào đường link bên dưới
+      expire_link: Link sẽ hết hạn trong vòng 2 tiếng
+      if_you_not_request: Nếu bạn không yêu cầu đặt lại mật khẩu của mình, vui lòng bỏ qua email này và mật khẩu của bạn sẽ giữ nguyên
   account_activations:
     account_activated: Tài khoản được kích hoạt
     activated_failed: Kích hoạt tài khoản thất bại
+  password_resets:
+    create:
+      email_sent:  Email được gửi kèm theo hướng dẫn đặt lại mật khẩu
+      email_not_found: Không tìm thấy email
+    edit:
+      title: Cập nhật mật khẩu
+      update_password: Cập nhật mật khẩu
+      password: Mật khẩu
+      confirmation: Nhập lại mật khẩu
+    update:
+      password_reset_success: Mật khẩu cập nhật thành công
+    load_user:
+      email_not_found: Không tìm thấy email
+    valid_user:
+      bad_request: Bad request
+    check_expiration:
+      token_time_out: Token hết hiệu lực
+    new:
+      forgot_password: Quên mật khẩu
