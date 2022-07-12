@@ -15,12 +15,18 @@ vi:
       sample_app: Sample App
       home: Trang chủ
       help: Trợ giúp
+      users: Người dùng
+      account: Tài khoản
+      setting: Cài đặt
+      profile: Hồ sơ
+      log_out: Đăng xuất
+      log_in: Đăng nhập
   static_pages:
     home:
-      home: Trang chu
+      home: Trang chủ
       english: English
-      vietnamese: Tieng Viet
-      sample_app: Ung dung mau
+      vietnamese: Tiếng Việt
+      sample_app: Ứng dụng mẫu
       describe_html: Day la describe_html
       welcome: Chào mừng đến với Sample app
       page_for: Đây là trang web dành cho
@@ -51,3 +57,11 @@ vi:
   shared:
     error: Lỗi !!!
     text_alert: Xảy ra lỗi
+  sessions:
+    new:
+      log_in: Đăng nhập
+      new_user: Người dùng mới ?
+      sign_up_now: Đăng ký ngay
+      password: Mật khẩu
+    create:
+      invalid_email_password_combination: Tên đăng nhập họăc mật khẩu không đúng
