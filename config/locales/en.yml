@@ -34,3 +34,18 @@ en:
       contact: Contact Page
       text: Contact the Ruby on Rails Tutorial about the sample app at the
       contact_page: Tutorial Page
+  user:
+    new:
+      sign_up: Sign Up
+      name: Name
+      email: Email
+      password: Password
+      password_confirmation: Password Confirmation
+      submit: Create my account
+    create:
+      alert_not_save: "Registration failed"
+    show:
+      show_user_failed: "User not found!"
+  shared:
+    error: Errors !!!
+    text_alert: Have some errors

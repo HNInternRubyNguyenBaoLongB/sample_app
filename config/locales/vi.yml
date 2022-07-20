@@ -36,3 +36,18 @@ vi:
       contact: Trang liên hệ
       text: "Tìm hiểu thêm hướng dẫn Ruby On Rails cho Ứng dụng mẫu tại:"
       title: Trang hướng dẫn
+  user:
+    new:
+      sign_up: Đăng ký
+      name: Tên
+      email: Email
+      password: Mật khẩu
+      password_confirmation: Nhập lại mật khẩu
+      submit: Tạo tài khoản
+    create:
+      alert_not_save: "Đăng ký thất bại"
+    show:
+      show_user_failed: "Không tìm thấy người dùng!"
+  shared:
+    error: Lỗi !!!
+    text_alert: Xảy ra lỗi
