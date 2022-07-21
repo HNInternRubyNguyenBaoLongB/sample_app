@@ -1,6 +1,6 @@
 class UserController < ApplicationController
   def show
-    @user = User.find_by(params[:id])
+    @user = User.find_by id: params[:id]
     return if @user
 
     flash[:danger] = t ".show_user_failed"
