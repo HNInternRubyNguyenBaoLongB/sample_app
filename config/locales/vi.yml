@@ -65,3 +65,15 @@ vi:
       password: Mật khẩu
     create:
       invalid_email_password_combination: Tên đăng nhập họăc mật khẩu không đúng
+  shared:
+    error: Lỗi !!!
+    text_alert: Xảy ra lỗi
+  sessions:
+    new:
+      log_in: Đăng nhập
+      new_user: Người dùng mới ?
+      sign_up_now: Đăng ký ngay
+      password: Mật khẩu
+      remember_me: Ghi nhớ đăng nhập
+    create:
+      invalid_email_password_combination: Tên đăng nhập họăc mật khẩu không đúng
