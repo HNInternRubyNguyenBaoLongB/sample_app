@@ -42,7 +42,13 @@ vi:
       contact: Trang liên hệ
       text: "Tìm hiểu thêm hướng dẫn Ruby On Rails cho Ứng dụng mẫu tại:"
       title: Trang hướng dẫn
-  user:
+  users:
+    index:
+      title: Danh sách người dùng
+    show:
+      show_user_failed: Không tìm thấy tài khoản
+    update:
+      update_success: Cập nhật thành công
     new:
       sign_up: Đăng ký
       name: Tên
@@ -54,17 +60,11 @@ vi:
       alert_not_save: "Đăng ký thất bại"
     show:
       show_user_failed: "Không tìm thấy người dùng!"
-  shared:
-    error: Lỗi !!!
-    text_alert: Xảy ra lỗi
-  sessions:
-    new:
-      log_in: Đăng nhập
-      new_user: Người dùng mới ?
-      sign_up_now: Đăng ký ngay
-      password: Mật khẩu
-    create:
-      invalid_email_password_combination: Tên đăng nhập họăc mật khẩu không đúng
+    user:
+      delete: Xóa người dùng
+      log_in_first: Xin mời đăng nhập.
+      delete_success: Xóa thành công
+      delete_fail: Xóa thất bại
   shared:
     error: Lỗi !!!
     text_alert: Xảy ra lỗi
