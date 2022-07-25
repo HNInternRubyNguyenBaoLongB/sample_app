@@ -2,6 +2,9 @@ class User < ApplicationRecord
   before_save :downcase_email
   attr_accessor :remember_token
 
+  UPDATABLE_ATTRS = %i(name email password password_confirmation).freeze
+  scope :order_by, ->(field, sort_by){order("#{field} #{sort_by}")}
+
   validates :name, presence: true,
   length: {maximum: Settings.user.name.max_length}
 

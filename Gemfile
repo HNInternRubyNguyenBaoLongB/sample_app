@@ -6,9 +6,11 @@ gem "bcrypt"
 gem "bootsnap", ">= 1.4.4", require: false
 gem "bootstrap-sass", "3.4.1"
 gem "config"
+gem "faker", "2.1.2"
 gem "jbuilder", "~> 2.7"
 gem "mysql2", "~> 0.5"
 gem "net-smtp"
+gem "pagy"
 gem "puma", "~> 5.0"
 gem "rails", "~> 6.1.6"
 gem "sass-rails", ">= 6"
@@ -19,6 +21,7 @@ group :development, :test do
 end
 group :development do
   gem "listen", "~> 3.3"
+  gem "pry-rails"
   gem "rack-mini-profiler", "~> 2.0"
   gem "web-console", ">= 4.1.0"
 end
