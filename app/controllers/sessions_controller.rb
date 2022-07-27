@@ -5,9 +5,12 @@ class SessionsController < ApplicationController
     user = User.find_by email: params[:session][:email].downcase
 
     if user&.authenticate params[:session][:password]
-      log_in user
-      remember user
-      redirect_back_or user
+      if user.activated?
+        log_in_with_active user
+      else
+        flash[:danger] = t ".user_in_active"
+        redirect_to :root
+      end
     else
       flash.now[:danger] = t "invalid_email_password_combination"
       render :new
