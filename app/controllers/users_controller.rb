@@ -1,10 +1,11 @@
 class UsersController < ApplicationController
   before_action :logged_in_user, except: %i(new create)
-  before_action :load_user, only: %i(show destroy update)
+  before_action :load_user, only: %i(show destroy update edit)
   before_action :correct_user, only: %i(show edit update)
 
   def index
-    @pagy, @users = pagy User.order_by("id", "ASC"), items: Settings.user.per_page
+    @pagy, @users = pagy User.order_by("id", "ASC"),
+                         items: Settings.user.per_page
   end
 
   def new

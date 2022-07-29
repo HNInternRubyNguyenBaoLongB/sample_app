@@ -7,10 +7,10 @@ class AccountActivationsController < ApplicationController
       @user.activate
       log_in @user
       flash[:success] = t ".account_activated"
-      redirect_to :root
     else
       flash[:danger] = t ".activated_failed"
-      redirect_to :root
+    end
+    redirect_to :root
   end
 
   private
