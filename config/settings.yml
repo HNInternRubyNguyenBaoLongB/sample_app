@@ -22,3 +22,12 @@ user:
     size: 80
   per_page: 10
   expiration_password: 2
+micropost:
+  img_size: 30
+  per_page: 5
+  img_type: <%= %w(image/png image/jpeg image/gif) %>
+  img_accept: "image/jpeg,image/gif,image/png"
+  content_max_length: 140
+  img_max_size: 5
+  height_limit: 50
+  width_limit: 50
