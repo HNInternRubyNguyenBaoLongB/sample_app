@@ -6,6 +6,7 @@ class Micropost < ApplicationRecord
   has_one_attached :image
 
   scope :recent_posts, ->{order(created_at: :desc)}
+  scope :by_user_ids, ->(user_id){where user_id: user_id}
 
   validates :user_id, presence: true
   validates :content, presence: true, length:

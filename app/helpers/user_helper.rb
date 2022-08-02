@@ -8,4 +8,8 @@ module UserHelper
   def show_delete? user
     current_user.admin? && !current_user?(user)
   end
+
+  def load_following
+    current_user.active_relationships.find_by(followed_id: @user.id)
+  end
 end
